@@ -1,10 +1,17 @@
-import Post from './posts/Posts'
+import Post from "./posts/Posts";
+import About from "./about/About.js";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div>
-      <Post />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        {/* <Route path="/" element={<App />} /> */}
+        <Route path="/" element={<Post />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

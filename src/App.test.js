@@ -6,7 +6,7 @@ test('renders learn react link', async() => {
   expect(true).toEqual(true);
 });
 
-test('renders learn react link', async() => {
+test('renders true to be true', async() => {
   render(<App />);
   expect(true).toEqual(true);
 });
